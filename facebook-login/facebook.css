@@ -1,11 +1,12 @@
 body{
     margin: 0;
-    text-align: center;
-    margin-top: 15px;
+    text-align: center;    
+    min-height: 100vh;
+    position: relative;
 }
 
 img{
-    margin-top: 15px;
+    margin-top: 50px;
     width: 300px;
 }
 
@@ -103,3 +104,11 @@ hr{
   *, *:before, *:after {
     box-sizing: inherit;
   }*/
+
+.next-link {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    bottom: 0; /* 0px from the bottom */
+    right: 0; /* 0px from the right */
+    padding: 50px;
+    font-size: 20px;
+}

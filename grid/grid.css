@@ -1,3 +1,9 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -155,4 +161,19 @@
 
 #mutual-alvin {
   object-position: 50% 30%;
+}
+
+.next-link, .previous-link {
+  position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+  bottom: 0;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.next-link {
+right: 0;
+}
+
+.previous-link {
+left: 0;
 }

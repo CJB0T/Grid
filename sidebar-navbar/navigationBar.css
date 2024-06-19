@@ -6,6 +6,8 @@ body{
     background-attachment: fixed;
     background-position: 50% 50%;
     background-size: cover;
+    min-height: 100vh;
+    position: relative;
 }
 
 nav{
@@ -74,3 +76,19 @@ nav{
 .main-container{
     background-color: blue;
 }
+
+.next-link, .previous-link {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    bottom: 0;
+    padding: 50px;
+    font-size: 20px;
+    color: rgb(0, 102, 255);
+  }
+  
+  .next-link {
+  right: 0;
+  }
+  
+  .previous-link {
+  left: 0;
+  }

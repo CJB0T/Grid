@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    min-height: 100vh;
+    position: relative;
 }
 
 nav{
@@ -66,4 +68,20 @@ nav{
     padding: 15px;
     position: absolute;
     bottom: 0;
+}
+
+.next-link, .previous-link {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    bottom: 0;
+    padding: 50px;
+    font-size: 20px;    
+}
+  
+.next-link {
+    right: 0;
+}
+
+.previous-link {
+    left: 0;
+    margin-left: 300px;
 }

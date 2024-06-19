@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
 .container {
   max-width: 1536px;
   margin-left: auto;
@@ -48,4 +54,19 @@
   .container {
     width: 100%;
   }
+}
+
+.next-link, .previous-link {
+  position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+  bottom: 0;
+  padding: 50px;
+  font-size: 20px;    
+}
+
+.next-link {
+  right: 0;
+}
+
+.previous-link {
+  left: 0;
 }

@@ -1,3 +1,9 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
 .header {
   height: 100px;
   background-color: rgb(141, 76, 179);
@@ -220,4 +226,19 @@
 
 .cat-name:hover {
   text-decoration: underline;
+}
+
+.next-link, .previous-link {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    bottom: 0;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.next-link {
+  right: 0;
+}
+
+.previous-link {
+  left: 0;
 }
